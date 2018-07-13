@@ -4,19 +4,22 @@
 **Version**: 1.0.0 (increment the patch/fix version number up if you make more commits past your first submission)
 
 ## Overview
-<!-- Provide a high level overview of what this application is and why you are building it, beyond the fact that it's an assignment for a Code Fellows 301 class. (i.e. What's your problem domain?) -->
+This application is a blog that accepts a group of articles to display using static page in conjunction with jQUery and Handlebars.
 
 ## Getting Started
-<!-- What are the steps that a user must take in order to build this app on their own machine and get it running? -->
+Ensure you have the Handlebars CDN, as well as the jQuery CDN imported into your html.
 
 ## Architecture
-<!-- Provide a detailed description of the application design. What technologies (languages, libraries, etc) you're using, and any other relevant design information. -->
+This application uses javaScript, jQuery, Handlebars, and arrow notation.
 
 ## Change Log
-<!-- Use this are to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an examples:
-
-01-01-2001 4:59pm - Application now has a fully-functional express server, with GET and POST routes for the book resource.
+7/13/2018 9:45am: implementing display of templated content
+7/13/2018 10:15 prevented handlebars from escaping p tags in body
+7/13/2018 10:45 all artciles populating using handlebars template
+7/13/2018 12:00: implemented filter functionality, implemented published x days ago display, added class update from template to draft in article.js in .toHtml
+7/13/2018 1:15: implementing arrow notation refactoring
 
 ## Credits and Collaborations
-<!-- Give credit (and a link) to other people or resources that helped you build this application. -->
--->
+Resources for Handlebars:
+http://handlebarsjs.com/
+https://tutorialzine.com/2015/01/learn-handlebars-in-10-minutes
