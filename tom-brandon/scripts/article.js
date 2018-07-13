@@ -23,6 +23,7 @@ Article.prototype.toHtml = function() {
   this.daysAgo = parseInt((new Date() - new Date(this.publishedOn))/60/60/24/1000);
   this.publishStatus = this.publishedOn ? `published ${this.daysAgo} days ago` : '(draft)';
   this.class = 'draft';
+  
   // REVIEW: The ternary operator above accomplishes this same logic.
   // if(this.publishedOn) {
   //   this.publishStatus = `published ${this.daysAgo} days ago`;
@@ -46,5 +47,4 @@ rawData.forEach(articleObject => {
 
 articles.forEach(article => {
   $('#articles').append(article.toHtml());
-  // $('article').removeClass('template').addClass('draft');
 });
