@@ -32,12 +32,12 @@
     -->
 
     <script id="article-template" type="text/x-handlebars-template">
-      <article class="template" data-category="{{category}}">
+      <article class="{{class}}" data-category="{{category}}" data-author="{{author}}">
         <header>
           <h1>{{title}}</h1>
           <div>
             By <address><a href="{{authorUrl}}">{{author}}</a></address>
-            published <time pubdate datetime="2000-01-01">{{publishedOn}}</time>
+            published {{publishStatus}} <time pubdate datetime=""></time>
           </div>
         </header>
         <section class="article-body">{{{body}}}</section>
@@ -80,8 +80,6 @@
             </li>
           </ul>
         </div>
-      <!-- articles populate here -->
-      <div class="content-placeholder"></div>
       </section>
       <section id="about" class="tab-content">
         <header>
